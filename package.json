@@ -1,6 +1,6 @@
 {
   "name": "@fourthpointer/nestjs-pulsar-transporter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "NestJS custom transporter for Apache Pulsar",
   "main": "dist/index.js",
   "scripts": {
