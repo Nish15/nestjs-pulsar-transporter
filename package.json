@@ -1,0 +1,22 @@
+{
+  "name": "@fourthpointer/nestjs-pulsar-transporter",
+  "version": "0.0.1",
+  "description": "NestJS custom transporter for Apache Pulsar",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "author": "Nishita Roy <nishita.roy@4thpointer.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@nestjs/microservices": "^9.0.4",
+    "pulsar-client": "^1.6.2",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.6",
+    "@types/node": "^18.0.6",
+    "jest": "^28.1.3"
+  }
+}

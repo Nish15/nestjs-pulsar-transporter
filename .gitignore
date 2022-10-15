@@ -1,0 +1,5 @@
+# The folder where all packages required by project are downloaded and installed.
+node_modules
+
+# The dist folder contains the minimized version of the source code.
+dist
