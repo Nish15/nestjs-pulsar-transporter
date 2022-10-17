@@ -1,9 +1,14 @@
-import { Client } from "pulsar-client";
+import { Client, ClientConfig } from 'pulsar-client';
 
 export class ClientPulsar {
   protected client: Client;
 
-  constructor(protected readonly options: any) {
+  constructor(protected readonly options: ClientConfig) {
+    if (!this.options && ! this.options.serviceUrl) {
+      throw new Error("Service url not found.");
+      
+    }
+
     this.client = this.connect();
   }
 
@@ -11,7 +16,7 @@ export class ClientPulsar {
     if (this.client) {
       return this.client;
     }
-    const serviceUrl = this.options?.serviceUrl;
+    const serviceUrl = this.options.serviceUrl;
     this.client = new Client({ serviceUrl });
     return this.client;
   }
