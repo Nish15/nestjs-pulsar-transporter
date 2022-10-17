@@ -28,5 +28,11 @@ describe('ServerPulsar', () => {
       serverPulsarService.listen(() => {});
       expect(serverPulsarService.createPulsarClient).toBeCalled();
     })
+
+    it('should called start function', () => {
+      jest.spyOn(serverPulsarService, 'start').mockImplementation();
+      serverPulsarService.listen(() => {});
+      expect(serverPulsarService.start).toBeCalled();
+    })
   })
 })
