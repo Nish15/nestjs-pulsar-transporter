@@ -12,9 +12,9 @@ describe('ClientPulsar', () => {
 
   describe('connect', () => {
     /**
-     * Test that connect function is be defined.
+     * Test that the connect function is defined.
      */
-    it('should called connect', () => {
+    it('should be defined', () => {
       expect(clientPulsarService.connect).toBeDefined();
     })
   })
